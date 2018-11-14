@@ -1,0 +1,15 @@
+project_token: fa7e077ef6010248da343b5f
+name: network-embedding-model
+jobs:
+  - job_id: 31f4c5bc-485e-4a1f-9b1d-7c4127fb92f6
+    language: python
+    name: train
+    entrypoint: "train.py"
+    resources:
+      limits:
+        cpu: 7
+        memory: 6Gi
+      requests:
+        cpu: 7
+        memory: 3Gi
+
